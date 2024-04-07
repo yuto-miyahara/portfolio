@@ -7,4 +7,13 @@ export default defineNuxtConfig({
     host: '0.0.0.0',
     port: 3000,
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/_global.scss" as *;',
+        },
+      },
+    },
+  },
 })

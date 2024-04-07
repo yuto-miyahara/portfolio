@@ -1,0 +1,99 @@
+//////////////////////////////////////////////////
+// Variables
+//////////////////////////////////////////////////
+
+/* Width */
+$content-width: 1280px;
+$break-point: 768px;
+
+/* Color */
+$white: #fff;
+$black: #000;
+
+
+
+//////////////////////////////////////////////////
+// MediaQuery
+//////////////////////////////////////////////////
+
+/* スマートフォン向けスタイル定義: $break-point以下表示幅が対象 */
+@mixin sp {
+  @media screen and (max-width: $break-point) {
+    @content
+  }
+};
+
+/* PC向けスタイル定義: $break-point以上表示幅が対象 */
+@mixin pc {
+  @media screen and (min-width: ($break-point + 1)) {
+    @content
+  }
+};
+
+
+
+//////////////////////////////////////////////////
+// Functions
+//////////////////////////////////////////////////
+
+/* デバイス表示切替クラス */
+.hide {
+	&-pc {
+		@include pc {
+			display: none !important;
+		}
+	}
+
+	&-sp {
+		@include sp {
+			display: none !important;
+		}
+	}
+}
+
+/* letter-spacing調整 */
+@mixin ltsp($num: -100) {
+  letter-spacing: $num * 0.001em;
+}
+
+/* 余白調整クラス */
+$types: (m: margin, p: padding);
+$directions: ('': '', -top: t, -left: l, -right: r, -bottom: b);
+$step : 5;
+$limit : 20;
+
+@mixin space_setting($device: '') {
+  @each $key, $type in $types {
+    .#{$key} {
+      @each $direction, $key in $directions {
+        &#{$key} {
+          @for $val from 0 through $limit {
+            &#{$val*$step}#{$device} {
+              #{$type}#{$direction}: $step * $val * 1px !important;
+            }
+          }
+        }
+      }
+
+      @each $direction, $key in $directions {
+        &#{$key}- {
+          @for $val from 1 through $limit {
+            &#{$val*$step}#{$device} {
+              #{$type}#{$direction}: $step * $val * -1px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include space_setting();
+
+@include pc {
+	@include space_setting(_pc);
+}
+
+@include sp {
+	@include space_setting(_sp);
+}
