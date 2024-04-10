@@ -16,4 +16,12 @@ export default defineNuxtConfig({
       },
     },
   },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'ja',
+        prefix: "og: http://ogp.me/ns#",
+      },
+    },
+  },
 })

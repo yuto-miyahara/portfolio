@@ -1,3 +1,17 @@
+<script setup lang="ts">
+const title = 'Y.Mのポートフォリオ'
+const description = 'フリーランスwebエンジニアのY.Mのポートフォリオサイトです。'
+
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogDescription: description,
+  ogImage: 'https://placehold.jp/1200x630.png',
+  twitterCard: 'summary_large_image',
+})
+</script>
+
 <template>
   <NuxtLayout>
     <NuxtPage />
