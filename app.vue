@@ -43,4 +43,24 @@ button {
   font-family: inherit;
   font-size: inherit;
 }
+
+
+
+//////////////////////////////
+// Base Style
+//////////////////////////////
+body {
+  color: $white;
+  background: $black;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: $primary;
+}
 </style>

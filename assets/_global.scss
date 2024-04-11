@@ -6,9 +6,15 @@
 $content-width: 1280px;
 $break-point: 768px;
 
+/* Size */
+$header-height: 64px;
+$footer-height: 32px;
+
 /* Color */
 $white: #fff;
 $black: #000;
+$primary: limegreen;
+$bg-layout: rgba(darken($primary, 45%), .9);
 
 
 
@@ -54,6 +60,20 @@ $black: #000;
 /* letter-spacing調整 */
 @mixin ltsp($num: -100) {
   letter-spacing: $num * 0.001em;
+}
+
+/* hover */
+@mixin hover {
+  &:hover,
+  &:focus-visible {
+    @content;
+  }
+}
+
+/* Transition共通化 */
+@mixin transition {
+  transition-duration: 300ms;
+  @content;
 }
 
 /* 余白調整クラス */
