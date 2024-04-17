@@ -51,6 +51,7 @@ button {
 //////////////////////////////
 body {
   color: $white;
+  font-family: sans-serif;
   background: $black;
 }
 
