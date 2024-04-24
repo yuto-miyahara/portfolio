@@ -1,9 +1,15 @@
+<script setup lang="ts">
+const currentRoute = useRouter().currentRoute
+</script>
+
 <template>
   <header>
     <HeaderInner>
-      <NuxtLink to="/">
-        <img src="/public/favicon.ico" alt="Logo" title="Logo">
-      </NuxtLink>
+      <component :is="currentRoute.fullPath === '/' ? 'h1' : 'div'">
+        <NuxtLink to="/">
+          <img src="/public/favicon.ico" alt="Logo" title="Logo">
+        </NuxtLink>
+      </component>
 
       <HeaderNav/>
     </HeaderInner>
