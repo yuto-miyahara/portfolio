@@ -175,6 +175,10 @@ a {
   font-weight: bold;
   text-decoration: none;
   @include transition;
+  &[aria-current] {
+    color: $bg-layout;
+    background: $white;
+  }
   @include sp {
     padding: .5em 2em;
     background: rgba($black, .5);
@@ -186,8 +190,7 @@ a {
     height: 100%;
     padding: 1em 2em;
     @include hover {
-      color: $bg-layout;
-      background: $white;
+      color: $primary;
     }
   }
 }
