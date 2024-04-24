@@ -40,9 +40,7 @@ if (process.client) {
 
 <template>
   <button :aria-label="buttonLabel" aria-controls="headerNav" :aria-expanded="isExpand" @click="switchExpand">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span v-for="n in 3"></span>
   </button>
 
   <nav id="headerNav" aria-label="メニュー" :data-open="isExpand">
