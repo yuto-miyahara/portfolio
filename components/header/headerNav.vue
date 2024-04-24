@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import data from "~/assets/data/menu.json";
 const isExpand = ref(false)
 const buttonLabel = ref('メニューを開く')
 
@@ -48,14 +49,8 @@ if (process.client) {
     <div>Menu</div>
 
     <ul>
-      <li>
-        <NuxtLink to="/profile">プロフィール</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/skill">スキル</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/works">制作事例</NuxtLink>
+      <li v-for="item, index in data" :key="index">
+        <NuxtLink :to="item.path">{{ item.name }}</NuxtLink>
       </li>
     </ul>
   </nav>
