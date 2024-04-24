@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const title = 'Y.Mのポートフォリオ'
-const description = 'フリーランスwebエンジニアのY.Mのポートフォリオサイトです。'
+const siteName: string = 'Miyaharaのポートフォリオ'
 
 useSeoMeta({
-  title: title,
-  ogTitle: title,
-  description: description,
-  ogDescription: description,
+  titleTemplate: (pageTitle) => {
+    return pageTitle
+      ? `${pageTitle} | ${siteName}`
+      : `${siteName}`
+  },
   ogImage: 'https://placehold.jp/1200x630.png',
   twitterCard: 'summary_large_image',
 })

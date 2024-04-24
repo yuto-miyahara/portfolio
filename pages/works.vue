@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const pageTitle: string = '制作事例'
+const description: string = `フリーランスのwebエンジニア Miyaharaの${pageTitle}です。`
+
+useSeoMeta({
+  title: pageTitle,
+  description: description,
+  ogDescription: description,
+})
 
 const bcParam = [
   {

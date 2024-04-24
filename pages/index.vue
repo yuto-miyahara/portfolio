@@ -1,3 +1,13 @@
+<script setup lang="ts">
+const pageTitle: string = 'ポートフォリオサイト'
+const description: string = `フリーランスのwebエンジニア Miyaharaの${pageTitle}です。`
+
+useSeoMeta({
+  description: description,
+  ogDescription: description,
+})
+</script>
+
 <template>
   <div class="topContainer">
     <topLead/>
