@@ -7,7 +7,7 @@ const currentRoute = useRouter().currentRoute
     <HeaderInner>
       <component :is="currentRoute.fullPath === '/' ? 'h1' : 'div'">
         <NuxtLink to="/">
-          <img src="/public/favicon.ico" alt="Logo" title="Logo">
+          <img src="/public/logo.svg" alt="Miyaharaのポートフォリオ" title="トップページに戻る">
         </NuxtLink>
       </component>
 
