@@ -28,4 +28,17 @@ header {
   left: 0;
   right: 0;
 }
+
+a {
+  display: block;
+  @include transition;
+  @include hover {
+    box-shadow: 0 0 4px 0 $primary;
+    border-radius: 4px;
+  }
+}
+
+img {
+  padding: 8px;
+}
 </style>
