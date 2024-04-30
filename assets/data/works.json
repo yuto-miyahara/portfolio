@@ -199,7 +199,7 @@
     "name": "某クリニック公式サイト",
     "outline": {
       "担当箇所": "フロントエンドコーディング",
-      "使用技術": "",
+      "使用技術": "HTML/CSS(Sass(Scss)), JavaScript(jQuery)",
       "制作時期": "2019年3月頃"
     },
     "description": [

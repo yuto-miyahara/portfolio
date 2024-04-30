@@ -22,7 +22,7 @@ const bcParam = [
   <PageTitle>{{ pageTitle }}</PageTitle>
 
   <pageContent>
-    <p>これまでに作成してきたサイトの情報をまとめています。</p>
+    <p>これまでに作成してきたサイトの情報をまとめています。<br>他にも既存サイトのページ追加や改修業務、WordPressの機能追加・エラー修正などの業務も経験していますが、<br class="hide-sp">サイト全体を単独でコーディングした事例のみに絞りました。</p>
 
     <WorksList/>
   </pageContent>
