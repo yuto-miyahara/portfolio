@@ -2,9 +2,10 @@
   {
     "name": "ポートフォリオサイト",
     "outline": {
-      "URL": null,
+      "URL": "https://portfolio.u238h4r4.com",
       "使用技術": "HTML/CSS(Sass(Scss)), JavaScript(Vue.js, Nuxt.js)",
-      "制作時期": "2024年4月〜"
+      "制作時期": "2024年4月〜",
+      "GitHub": "https://github.com/yuto-miyahara/portfolio"
     },
     "description": [
       "自身のポートフォリオとして作成したサイトです。",
