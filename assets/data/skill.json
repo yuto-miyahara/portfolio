@@ -1,0 +1,163 @@
+{
+  "level": [
+    "初心(知っている程度)",
+    "初級(業務で未使用・勉強中)",
+    "中級(業務で使用したことがある)",
+    "上級(業務でよく使用している)"
+  ],
+  "skill": [
+    {
+      "category": "言語経験",
+      "items": [
+        {
+          "name": "HTML/CSS",
+          "level": 3,
+          "description": [
+            "セマンティックなマークアップと破綻しにくいCSS設計を意識"
+          ]
+        },
+        {
+          "name": "Sass(Scss)",
+          "level": 3,
+          "description": [
+            "主に変数とMiixinを使用"
+          ]
+        },
+        {
+          "name": "JavaScript",
+          "level": 2,
+          "description": [
+            "VanillaのJSはあまり書き慣れていない",
+            "(JSよりも先にjQueryを学んだため)"
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "level": 1,
+          "description": [
+            "Vueと併せて勉強中"
+          ]
+        },
+        {
+          "name": "PHP",
+          "level": 3,
+          "description": [
+            "主にテンプレートエンジンとして使用",
+            "(WordPress, HTMLなど)"
+          ]
+        },
+        {
+          "name": "Python",
+          "level": 1,
+          "description": [
+            "汎用性が高そうだったので勉強中",
+            "現状では業務で使用する機会なし"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "フレームワーク/ライブラリ",
+      "items": [
+        {
+          "name": "jQuery",
+          "level": 3,
+          "description": [
+            "フロントエンドの頻出処理は大抵自作可能",
+            "(アコーディオン, タブ切り替え, モーダルなど)"
+          ]
+        },
+        {
+          "name": "React.js",
+          "level": 0,
+          "description": [
+            "公式のチュートリアルを終えた程度"
+          ]
+        },
+        {
+          "name": "Vue.js",
+          "level": 1,
+          "description": [
+            "UIフレームワークとして採用予定",
+            "(Reactと比較してわかりやすく感じたため)"
+          ]
+        },
+        {
+          "name": "Nuxt.js",
+          "level": 1,
+          "description": [
+            "アプリケーションフレームワークとして採用予定",
+            "(標準のUIFWとしてVue.jsを採用予定のため)"
+          ]
+        },
+        {
+          "name": "WordPress",
+          "level": 3,
+          "description": [
+            "多数の構築経験あり",
+            "主に小規模, たまに中規模",
+            "動作のカスタマイズ経験もあり"
+          ]
+        },
+        {
+          "name": "Laravel",
+          "level": 2,
+          "description": [
+            "小規模サービスの構築経験あり"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "その他",
+      "items": [
+        {
+          "name": "ウェブアクセシビリティ",
+          "level": 2,
+          "description": [
+            "「JIS X 8341-3:2016」",
+            "レベルAA準拠の対応経験あり"
+          ]
+        },
+        {
+          "name": "Git",
+          "level": 3,
+          "description": [
+            "業務では必ず使用",
+            "主にGitHubとSourceTreeで運用"
+          ]
+        },
+        {
+          "name": "Node.js",
+          "level": 1,
+          "description": [
+            "勉強したことはあるという程度"
+          ]
+        },
+        {
+          "name": "npm",
+          "level": 3,
+          "description": [
+            "開発環境の構築に使用"
+          ]
+        },
+        {
+          "name": "Vite",
+          "level": 2,
+          "description": [
+            "現在、使用しているビルドツール",
+            "以前は主にWebPackを使用"
+          ]
+        },
+        {
+          "name": "Docker",
+          "level": 1,
+          "description": [
+            "勉強中",
+            "共有・移行・復元しやすい開発環境の構築が目標"
+          ]
+        }
+      ]
+    }
+  ]
+}

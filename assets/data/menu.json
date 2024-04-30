@@ -1,0 +1,14 @@
+[
+  {
+    "name": "プロフィール",
+    "path": "/profile"
+  },
+  {
+    "name": "スキル",
+    "path": "/skill"
+  },
+  {
+    "name": "制作事例",
+    "path": "/works"
+  }
+]
