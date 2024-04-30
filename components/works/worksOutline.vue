@@ -9,7 +9,10 @@ defineProps({
     <template v-for="value, key in data" :key="key">
       <div class="outline__block" v-if="value">
         <p class="outline__head">{{ key }}</p>
-        <p class="outline__body">{{ value }}</p>
+        <p class="outline__body">
+          <NuxtLink :to="value" target="_blank" v-if="value.startsWith('http')">{{ value }}</NuxtLink>
+          <template v-else>{{ value }}</template>
+        </p>
       </div>
     </template>
   </div>
